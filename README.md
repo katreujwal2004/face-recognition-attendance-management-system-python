@@ -1,169 +1,165 @@
-Face Recognition Attendance Management System
 
-Python | OpenCV | MySQL | Tkinter
 
-Project Summary
+# Face Recognition Attendance Management System
 
-A real-time Face Recognition Attendance Management System designed to automate attendance marking using computer vision. The system accurately detects and recognizes faces through a live camera feed, logs attendance with timestamps, prevents duplicates, and generates structured reports — eliminating manual effort and proxy attendance.
+**Python | OpenCV | MySQL | Tkinter**
 
-Overview
+---
 
-This project implements an end-to-end desktop-based attendance solution using OpenCV-powered face recognition and a Tkinter GUI. It captures real-time video, identifies registered individuals, and records attendance in a MySQL database with full backend integration. The system also supports PDF report generation and audio alerts, making it suitable for academic or organizational use.
+## Project Summary
 
-Problem Statement
+A real-time Face Recognition Attendance Management System designed to automate attendance marking using computer vision. The system detects and recognizes faces through a live camera feed, logs attendance with timestamps, prevents duplicate entries, and generates structured reports — eliminating manual effort and proxy attendance.
 
-Conventional attendance systems are time-consuming, error-prone, and vulnerable to manipulation. The objective of this project is to build a secure, automated, and efficient attendance system that leverages face recognition to ensure accuracy, transparency, and real-time execution.
+---
 
-Dataset
+## Overview
 
-Face image dataset (local storage)
+This project implements an end-to-end, desktop-based attendance solution using **OpenCV-powered face recognition** and a **Tkinter GUI**. It captures real-time video input, identifies registered individuals, and records attendance in a **MySQL database** with full backend integration. The system also supports **PDF report generation and audio alerts**, making it suitable for academic and organizational use.
 
-Includes:
+---
 
-Labeled face images of registered users
+## Problem Statement
 
-Live camera input for recognition
+Conventional attendance systems are time-consuming, error-prone, and vulnerable to manipulation. The objective of this project is to build a **secure, automated, and efficient attendance system** that leverages face recognition technology to ensure accuracy, transparency, and real-time execution.
 
-Attendance records stored in a database
+---
 
-Files & Directories
+## Dataset
 
-ImagesOfFaces/ → Dataset of registered face images
+* Face image dataset (local storage)
+* Includes:
 
-main.py → Core face recognition and attendance logic
+  * Labeled face images of registered users
+  * Live camera input for real-time recognition
+  * Attendance records stored in a database
 
-train.py → Face dataset training module
+---
 
-gui.py → Tkinter-based user interface
+## Files & Directories
 
-database/ → MySQL schema and tables
+* **ImagesOfFaces/** → Dataset of registered face images
+* **main.py** → Core face recognition and attendance logic
+* **train.py** → Face dataset training module
+* **gui.py** → Tkinter-based user interface
+* **database/** → MySQL schema and tables
+* **reports/** → Generated PDF attendance reports
+* **README.md** → Project documentation
 
-reports/ → Generated PDF attendance reports
+---
 
-README.md → Project documentation
+## Tools & Technologies
 
-Tools & Technologies
+* **Python** – Core programming language
+* **OpenCV** – Face detection and recognition
+* **Haar Cascades** – Face detection algorithm
+* **Tkinter** – Desktop GUI development
+* **MySQL** – Backend database for attendance storage
+* **ReportLab / FPDF** – PDF attendance report generation
 
-Python – Core programming language
+---
 
-OpenCV – Face detection and recognition
+## System Approach
 
-Haar Cascades – Face detection algorithm
+### Face Detection & Recognition
 
-Tkinter – Desktop GUI development
+* Implemented Haar Cascade Classifier for face detection
+* Trained a face recognition model using labeled image datasets
+* Performed real-time recognition via live camera feed
 
-MySQL – Backend database for attendance storage
+### Attendance Automation
 
-ReportLab / FPDF – PDF report generation
+* Automatically marks attendance upon successful recognition
+* Prevents duplicate attendance entries for the same day
+* Logs attendance with accurate date and time stamps
 
-System Approach
-Face Detection & Recognition
+### GUI Development
 
-Implemented Haar Cascade Classifier for face detection
+* Live camera feed display
+* User-friendly controls and navigation
+* Buttons for recognition, dataset creation, and reporting
 
-Trained a face recognition model using labeled image datasets
+### Database Integration
 
-Performed real-time recognition via live camera feed
+* Persistent storage of user and attendance records
+* Structured MySQL tables for efficient querying
+* Attendance data used directly for report generation
 
-Attendance Automation
+---
 
-Automatically marks attendance upon successful recognition
+## Key Features
 
-Prevents duplicate attendance entries for the same day
+* Real-time face recognition-based attendance
+* Duplicate attendance prevention
+* Timestamp-based logging
+* Interactive desktop application
+* Live camera feed with recognition status
+* Audio alerts for recognition outcomes
+* PDF attendance report generation
+* Secure MySQL database integration
 
-Logs attendance with accurate date and time stamps
+---
 
-GUI Development
-
-Live camera feed display
-
-User-friendly controls and navigation
-
-Buttons for recognition, dataset creation, and reporting
-
-Database Integration
-
-Persistent storage of user and attendance records
-
-Structured MySQL tables for efficient querying
-
-Attendance data used directly for report generation
-
-Key Features
-
-Real-time face recognition-based attendance
-
-Duplicate attendance prevention
-
-Timestamp-based logging
-
-Interactive desktop application
-
-Live camera feed with recognition status
-
-Audio alerts for recognition outcomes
-
-PDF attendance report generation
-
-Secure MySQL database integration
-
-Output
+## Output
 
 The system provides:
 
-Live face recognition through webcam
+* Live face recognition through webcam
+* Automatic attendance marking
+* On-screen status notifications
+* Downloadable PDF attendance reports
 
-Automatic attendance marking
+---
 
-On-screen status notifications
+## How to Run the Project
 
-Downloadable PDF attendance reports
+1. **Project Repository:**
+   [https://github.com/katreujwal2004/face-recognition-attendance-management-system](https://github.com/katreujwal2004/face-recognition-attendance-management-system)
 
-How to Run the Project
-Project Repository
+2. **Clone the repository:**
 
-https://github.com/katreujwal2004/face-recognition-attendance-management-system
+   ```bash
+   git clone https://github.com/katreujwal2004/face-recognition-attendance-management-system.git
+   ```
 
-Steps
+3. **Install required dependencies:**
 
-Clone the repository
+   ```bash
+   pip install opencv-python mysql-connector-python reportlab
+   ```
 
-git clone https://github.com/katreujwal2004/face-recognition-attendance-management-system.git
+4. **Configure MySQL database and tables**
 
+5. **Run the application:**
 
-Install required dependencies
+   ```bash
+   python main.py
+   ```
 
-pip install opencv-python mysql-connector-python reportlab
+6. **Register faces and start attendance using the GUI**
 
+---
 
-Configure MySQL database and tables
+## Results & Conclusion
 
-Run the application
+This project demonstrates the practical application of **computer vision and automation** to solve real-world problems. It showcases strong skills in **Python development, OpenCV-based face recognition, GUI design, database integration, and system automation**, making it a solid addition to a data and AI-focused portfolio.
 
-python main.py
+---
 
+## Future Enhancements
 
-Register faces and start attendance using the GUI
+* Improve accuracy using deep learning-based face recognition
+* Add cloud database support
+* Develop a web-based interface
+* Enable multi-camera attendance tracking
+* Implement role-based access control
 
-Results & Conclusion
+---
 
-This project demonstrates the practical application of computer vision and automation to solve real-world problems. It showcases strong skills in Python development, OpenCV-based face recognition, GUI design, database integration, and system automation, making it a solid addition to a data/AI-focused portfolio.
+## Author & Contact
 
-Future Enhancements
+**Ujwal Katre**
+📧 Email: [ujwalkatre2004@gmail.com](mailto:ujwalkatre2004@gmail.com)
+🔗 GitHub: [https://github.com/katreujwal2004](https://github.com/katreujwal2004)
 
-Improve accuracy using deep learning-based face recognition
+---
 
-Add cloud database support
-
-Develop a web-based interface
-
-Enable multi-camera attendance tracking
-
-Implement role-based access control
-
-Author & Contact
-
-Ujwal Katre
-📧 Email: ujwalkatre2004@gmail.com
-
-🔗 GitHub: https://github.com/katreujwal2004
